@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System info checker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />   
+    <style>
+        body
+        {
+            background-color: crimson;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    .card {
+  margin-top: 45px;
+  height: 500px;
+  width: 350px;
+  color: antiquewhite;
+  text-transform: capitalize;
+  font-size: 20px;
+/*  font-weight: bold;*/
+  text-align: center;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+p
+{
+  margin-top: 5px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+}
+span
+{
+  color: goldenrod;
+}
+    </style>
+</head>
+<body>
+      <div class="card">
+        <br>
+    <i class="fa-3x  fas fa-user-cog"  style="color:royalblue"></i>
+ <p><span> username:</span>{{username}}</p>
+ <p><span>Architecture:</span>{{Architecture}}</p>
+ <p><span>Os Type:</span>{{OsType}}</p>
+ <p><span>Total Ram:</span>{{TotalRam}}</p>
+ <p><span>Free Ram:</span>{{FreeRam}}</p>
+ <p><span>Version:</span>{{Version}}</p>
+ <p><span>Release:</span>{{Release}}</p>
+    </div>
+</body>
+</html>
