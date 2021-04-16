@@ -1,12 +1,14 @@
 const express=require("express");
 const os=require("os");
+const path=require("path");
 const port=process.env.PORT || 8000;
 
 const app=express();
 
+const templatepath=path.join(__dirname,'/templates/views');
 
 app.set("view engine","hbs");
-//app.set("views");
+app.set("views",templatepath);
 
 app.get('/',(req,res)=>{
     res.render("index",{
